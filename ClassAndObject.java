@@ -4,42 +4,65 @@
 public class ClassAndObject {
     public static void main(String[] args) {
         Person person1 = new Person();
-
-
-        person1.setNameAndAge("Роман", 20);
+        person1.setName("");
+        person1.setAge(-3);
         person1.speak();
-
-        Person person2 = new Person();
-
-        person2.setNameAndAge("Вова", 30);
-        person2.speak();
+        System.out.println(person1.getAge());
+        System.out.println(person1.getName());
     }
 }
 
 class Person{
-    String name;
-    int age;
+    private String name;
+    private int age;
 
-
-    void setNameAndAge(String username, int userage){
-        name = username;
-        age = userage;
-
+    public void setName (String userName){
+        if (userName.isEmpty()){
+            System.out.println("введено не правильное имя");
+        } else {
+            name = userName;
+        }
     }
 
-    int calculationYearsToRetirement(){
-        int years = 65-age;
-        return years;
+    public String getName(){
+        return name;
     }
 
-    void speak(){
-        System.out.println("Меня зовут " + name + ", мне " + age + " лет");
+    public void setAge (int userAge){
+        if (userAge <0){
+            System.out.println("не тот возраст");
+        } else {
+            age = userAge;
+        }
+        
     }
 
-    void sayHello(){
-        System.out.println("Привет!");
+    public int getAge(){
+        return age;
     }
 
 
 
-}
+
+//     void setNameAndAge(String username, int userage){
+//         name = username;
+//         age = userage;
+
+//     }
+
+//     int calculationYearsToRetirement(){
+//         int years = 65-age;
+//         return years;
+//     }
+
+//     void speak(){
+//         System.out.println("Меня зовут " + name + ", мне " + age + " лет");
+//     }
+
+//     void sayHello(){
+//         System.out.println("Привет!");
+//     }
+
+
+
+// }
