@@ -44,25 +44,25 @@ class Person{
 
 
 
-//     void setNameAndAge(String username, int userage){
-//         name = username;
-//         age = userage;
+    void setNameAndAge(String username, int userage){
+        name = username;
+        age = userage;
 
-//     }
+    }
 
-//     int calculationYearsToRetirement(){
-//         int years = 65-age;
-//         return years;
-//     }
+    int calculationYearsToRetirement(){
+        int years = 65-age;
+        return years;
+    }
 
-//     void speak(){
-//         System.out.println("Меня зовут " + name + ", мне " + age + " лет");
-//     }
+    void speak(){
+        System.out.println("Меня зовут " + name + ", мне " + age + " лет");
+    }
 
-//     void sayHello(){
-//         System.out.println("Привет!");
-//     }
+    void sayHello(){
+        System.out.println("Привет!");
+    }
 
 
 
-// }
+}
